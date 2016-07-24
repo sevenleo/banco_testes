@@ -15,7 +15,7 @@ public class BancoCoberturaLogica {
 	@Test
 	public void if1menor() {
 		int[][] tempos = {{1,1},{2,3},{3,6}};
-		int result = Banco.banco(3, 3, tempos);
+		int result = Banco.banco(4, 3, tempos);
 		assertEquals(0, result);
 	}
 	@Test
