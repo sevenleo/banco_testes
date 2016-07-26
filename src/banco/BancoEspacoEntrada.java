@@ -88,7 +88,7 @@ public class BancoEspacoEntrada {
 	//o codigo nao espera valores de entrada fora dos limites
 	@Test
 	public void clientesmaior1000() {
-		int caixas = 2;
+		int caixas = 3;
 		int clientes = 1010;
 		int[][] tempos = temposrandom(clientes);
 		int result = Banco.banco(caixas, clientes, tempos);
@@ -133,4 +133,5 @@ public class BancoEspacoEntrada {
 		assertEquals(0, result);
 	}
 	
+
 }
