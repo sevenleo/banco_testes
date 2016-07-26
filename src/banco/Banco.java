@@ -6,8 +6,14 @@ import java.util.List;
 
 public class Banco {
 
-	public static int banco(int c, int n, int[][] tempos) {
-		if (n <= c) {
+	public static int banco(int QtdadeCaixas, int QtdadeClientes, int[][] tempos) {
+		if (tempos.length != QtdadeClientes) {
+			System.out.println("Péraí");
+			System.out.println(QtdadeClientes);
+			System.out.println(tempos.length);
+		}
+		
+		if (QtdadeClientes <= QtdadeCaixas) {
 			return 0;
 		} else {
 			int cont = 0;
@@ -15,9 +21,9 @@ public class Banco {
 			List<Integer> termina = new ArrayList<Integer>();
 			termina.add(tempos[0][0] + tempos[0][1]);
 
-			int caixas = c - 1;
+			int caixas = QtdadeCaixas - 1;
 
-			for (int i = 1; i < n; i++) {
+			for (int i = 1; i < QtdadeClientes; i++) {
 				Collections.sort(termina);
 
 				while (termina.get(0) <= tempos[i][0]) {
