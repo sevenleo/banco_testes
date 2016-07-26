@@ -7,12 +7,12 @@ import java.util.List;
 public class Banco {
 
 	public static int banco(int QtdadeCaixas, int QtdadeClientes, int[][] tempos) {
-		if (tempos.length != QtdadeClientes) {
+		/*if (tempos.length != QtdadeClientes) {
 			System.out.println("Péraí");
 			System.out.println(QtdadeClientes);
 			System.out.println(tempos.length);
 		}
-		
+		*/
 		if (QtdadeClientes <= QtdadeCaixas) {
 			return 0;
 		} else {
