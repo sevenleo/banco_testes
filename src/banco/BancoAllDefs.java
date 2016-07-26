@@ -9,7 +9,7 @@ public class BancoAllDefs {
 
 //CONT
 //[1,2,4,5,7,8,10,12,13,4,6]
-/*
+
 	@Test
 	public void cont() {
 		int[][] tempos = { { 1, 2 }, { 4, 2 }, { 5, 2 } };
@@ -17,7 +17,7 @@ public class BancoAllDefs {
 		assertEquals(0, result);
 	}
 
-	*/
+
 	
 
 //TERMINA

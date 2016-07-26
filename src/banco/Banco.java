@@ -47,3 +47,14 @@ public class Banco {
 		}
 	}
 }
+
+
+
+/*if (tempos.length != QtdadeClientes) {
+			System.out.println("Erro no teste");
+			System.out.println(QtdadeClientes);
+			System.out.println(tempos.length);
+		}
+*/
+
+ 
