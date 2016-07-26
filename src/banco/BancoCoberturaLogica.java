@@ -5,22 +5,37 @@ import org.junit.Test;
 
 public class BancoCoberturaLogica {
 
-	
+
 //if (n <= c)
-	@Test //true - menor
+
+	@Test 
+	//true - menor
+	//matou 11
 	public void if1true() {
 		int[][] tempos = {{1,1},{2,3},{3,6}};
 		int result = Banco.banco(4, 3, tempos);
 		assertEquals(0, result);
 	}
-	@Test //true - igual
+	
+	
+	@Test 
+	//true - igual
+	//matou 11
 	public void if1true2() {
 		int[][] tempos = {{1,1},{2,3},{3,6}};
 		int result = Banco.banco(3, 3, tempos);
 		assertEquals(0, result);
 	}
-	
-	@Test //false - n > c 
+
+	@Test 
+	//false - n > c 
+	//matou 20changed a
+	//matou 20changed b
+	//matou 25
+	//matou 27
+	//matou 32negated
+	//matou 41negated
+	//matou 46
 	public void if1false() {
 		int[][] tempos = {{1,1},{2,3},{3,6}};
 		int result = Banco.banco(1, 3, tempos);
@@ -28,10 +43,19 @@ public class BancoCoberturaLogica {
 	}
 
 	
-	
 //for (int i = 1; i < n; i++)
-//( i < n )
-	@Test //true - o for sera percorrido ao menos uma vez quando n>=1
+	@Test
+	//( i < n )
+	//true - o for sera percorrido ao menos uma vez quando n>=1
+	//matou 10
+	//matou 16
+	//matou 18
+	//matou 21
+	//matou 23
+	//matou 33
+	//matou 34
+	//matou 39
+	//matou 41a
 	public void fortrue() {
 		int[][] tempos = {{1,1},{2,3},{3,6},{5,10},{9,9}};
 		int result = Banco.banco(2, 5, tempos);
@@ -58,7 +82,6 @@ public class BancoCoberturaLogica {
 	}
 
 	
-
 	@Test //false - cliente esperando caixa esvaziar
 	public void whilefalse() {
 		int[][] tempos = {{0,10},{0,10},{0,10},{0,10},{2,9},{3,10},{4,2}};
@@ -117,7 +140,7 @@ public class BancoCoberturaLogica {
 	
 	
 	
-	//matou collections.sort
+	//matou 21 - collections.sort
 	@Test
 	public void teste7() {
 		int[][] tempos = {{0,5}, {0, 2}, {3, 9}, {4, 4}, {4, 8}, {4, 8}, {4, 9}, {4, 5}, {4, 1}};

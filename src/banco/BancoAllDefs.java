@@ -10,6 +10,7 @@ public class BancoAllDefs {
 //CONT
 //[1,2,4,5,7,8,10,12,13,4,6]
 
+	//matou 11,39,41,42
 	@Test
 	public void cont() {
 		int[][] tempos = { { 1, 2 }, { 4, 2 }, { 5, 2 } };
