@@ -10,37 +10,13 @@ public class BancoAllDefs {
 ////I
 ////[1,2,4,5,7,8,10,13,4,6]
 	@Test
-	//matou 20changed
-	//matou 20changed
-	//matou 41negated
-	//matou 46replaced
-	public void i() {
-		int[][] tempos = { { 0, 9 }, { 0, 10 }, { 4, 2 },{ 5, 2 }, { 7, 10 } };
-		int result = Banco.banco(2, 5, tempos);
-		assertEquals(0, result);
-	}
-	
-	@Test
-	//matou 20changed
-	//matou 20changed
-	//matou 41negated
-	//matou 41replaced
-	//matou 46replaced
-	public void i2() {
-		int[][] tempos = { { 0, 9 }, { 4, 8 },{ 5, 2 }};
-		int result = Banco.banco(1, 3, tempos);
-		assertEquals(0, result);
-	}
-
-
-	@Test
 	//matou  11
 	//matou  25
 	//matou  27
 	//matou  33
 	//matou  34
 	//matou  42
-	public void i3() {
+	public void i() {
 		int[][] tempos = { { 0, 9 }, { 4, 8 }};
 		int result = Banco.banco(1, 2, tempos);
 		assertEquals(0, result);
