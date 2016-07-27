@@ -23,7 +23,7 @@ public class BancoEspacoEntrada {
 		return tempos;
 	}
 	
-
+/*
 	//com espera menor do que 20
 	@Test
 	public void testemenos() {
@@ -47,7 +47,7 @@ public class BancoEspacoEntrada {
 		int result = Banco.banco(1, 4, tempos);
 		assertEquals(1, result);
 	}
-	
+	*/
 	
 	// caixas < 0
 	// retorno esperado 0, o codigo nao espera valores de entrada fora dos limites
