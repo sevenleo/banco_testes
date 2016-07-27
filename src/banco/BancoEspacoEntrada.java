@@ -10,19 +10,6 @@ public class BancoEspacoEntrada {
 
 	
 	
-	int[][] temposrandom(int clientes){
-		Random sorte = new Random();
-		
-		int[][] tempos = new int[clientes][2];
-		for (int i = 0; i < clientes; i++) {
-			tempos[i][0] = sorte.nextInt(101);
-			tempos[i][1] = sorte.nextInt(11);
-			//System.out.println(tempos[i][0] + " " + tempos[i][1]);
-		}
-		
-		return tempos;
-	}
-	
 
 	//F1b1 (1<=caixas<=10)
 	@Test
@@ -69,14 +56,7 @@ public class BancoEspacoEntrada {
 		
 	//F2b2 (clientes>1000)
 	//Impossível - Restrição das entradas do problema
-		@Test
-		public void clientesmaior1000() {
-			int caixas = 3;
-			int clientes = 1010;
-			int[][] tempos = temposrandom(clientes);
-			int result = Banco.banco(caixas, clientes, tempos);
-			assertTrue(result>900);
-		}
+
 
 	//F2b3 (clientes<1)
 	//Impossível - Restrição das entradas do problema
@@ -92,9 +72,8 @@ public class BancoEspacoEntrada {
 	//F3b1 (caixas > clientes)
 	@Test
 	public void maiscaixas() {
-		int clientes = 20;
-		int caixas = clientes + new Random().nextInt(clientes);
-		int result = Banco.banco(caixas, clientes, temposrandom(clientes));
+		int[][] tempos = { { 1, 2 }, { 2, 3 }, { 3, 4 } };
+		int result = Banco.banco(5, 3, tempos);
 		assertEquals(0, result);
 	}
 
