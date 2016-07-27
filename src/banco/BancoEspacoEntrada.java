@@ -92,4 +92,13 @@ public class BancoEspacoEntrada {
 		assertEquals(0, result);
 	}
 
+	
+	
+	@Test
+    public void testeExtra() {
+	int[][] tempos = { { 0, 5 }, { 0, 2 }, { 3, 9 }, { 4, 4 }, { 4, 8 },
+		{ 4, 8 }, { 4, 9 }, { 4, 5 }, { 4, 1 } };
+	int result = Banco.banco(2, 9, tempos);
+	assertEquals(1, result);
+    }
 }
