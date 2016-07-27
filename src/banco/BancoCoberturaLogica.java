@@ -8,14 +8,14 @@ public class BancoCoberturaLogica {
 
 //if (n <= c)
 
-	@Test 
-	//true - menor
-	//matou 11
-	public void if1true() {
-		int[][] tempos = {{1,1},{2,3},{3,6}};
-		int result = Banco.banco(4, 3, tempos);
-		assertEquals(0, result);
-	}
+//	@Test 
+//	//true - menor
+//	//matou 11
+//	public void if1true() {
+//		int[][] tempos = {{1,1},{2,3},{3,6}};
+//		int result = Banco.banco(4, 3, tempos);
+//		assertEquals(0, result);
+//	}
 	
 	
 	@Test 

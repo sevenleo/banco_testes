@@ -89,8 +89,6 @@ public class BancoAllDefs {
 //[1,2,4,5,7,9,7,8,10,13,4,6]
 	@Test
 	//mata 20,20,25,27,32,41,46
-	//fiz o caminho errado , fiz 10,12,13...
-	//mata 10,18,20,20,20,23,25,27,32,32,33,34,39,42,42,42,46
 	public void termina2() {
 		int[][] tempos = { {0, 1}, { 0,10 }, {2,4},{3,5}};
 		int result = Banco.banco(2, 4, tempos);
