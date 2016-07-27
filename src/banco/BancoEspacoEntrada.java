@@ -61,7 +61,7 @@ public class BancoEspacoEntrada {
 	
 	
 	// clientes < 0
-	// retorno esperado 0, o codigo nao espera valores de entrada fora dos limites
+//	 retorno esperado 0, o codigo nao espera valores de entrada fora dos limites
 //	@Test
 //	public void clientesmenor0() {
 //		int[][] tempos = null;
@@ -117,7 +117,7 @@ public class BancoEspacoEntrada {
 	
 	//caixas<clientes com espera
 	@Test
-	public void maisclientes_com_espera() {
+	public void com_espera() {
 		int[][] tempos = { { 0, 10 }, { 0, 10 }, { 3, 8 } ,{4,5}};
 		int result = Banco.banco(1, 4, tempos);
 		assertEquals(1, result);

@@ -29,7 +29,7 @@ public class BancoParesArcosTest {
 	@Test
 	public void teste2() {
 		int[][] tempos = { { 1, 2 }, { 1, 2 } };
-		int result = Banco.banco(1, 2, tempos);
+		int result = Banco.banco(2, 2, tempos);
 		assertEquals(0, result);
 	}
 
