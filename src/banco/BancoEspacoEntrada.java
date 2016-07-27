@@ -23,8 +23,8 @@ public class BancoEspacoEntrada {
 		return tempos;
 	}
 	
-/*
-	//com espera menor do que 20
+
+	//com espera menor do que 20s
 	@Test
 	public void testemenos() {
 		int[][] tempos = {{1,10},{10,10}};
@@ -32,7 +32,7 @@ public class BancoEspacoEntrada {
 		assertEquals(0, result);
 	}
 	
-	//com espera igual a 20
+	//com espera igual a 20s
 	@Test
 	public void testeigual() {
 		int[][] tempos = {{0,10},{0,10},{0,1}};
@@ -40,14 +40,14 @@ public class BancoEspacoEntrada {
 		assertEquals(0, result);
 	}
 	
-	//com espera maior do que 20
+	//com espera maior do que 20s
 	@Test
 	public void testemais() {
 		int[][] tempos = {{1,7},{1,7},{1,7},{1,10}};
 		int result = Banco.banco(1, 4, tempos);
 		assertEquals(1, result);
 	}
-	*/
+	
 	
 	// caixas < 0
 	// retorno esperado 0, o codigo nao espera valores de entrada fora dos limites
