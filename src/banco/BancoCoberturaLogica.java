@@ -92,28 +92,37 @@ public class BancoCoberturaLogica {
 
 
 //if (termina.isEmpty())
-// para entrar no caso que testa se ha caixas ocupados é necessário criar uma fila
-	@Test
-	public void if2true() {
-		int[][] tempos = {{0,10},{0,10},{0,10},{5,10}};
-		int result = Banco.banco(1, 4, tempos);
-		assertEquals(1, result);
-	}
+	 	//esvaziar todos os caixas antes de um cliente entrar
+		@Test
+		public void if2true() {
+			int[][] tempos = {{0,10},{0,10},{0,10},{15,10}};
+			int result = Banco.banco(1, 4, tempos);
+			assertEquals(0, result);
+		}
+	
+	 	// nao conseguir esvaziar todos os caixas antes de um cliente entrar
+		@Test
+		public void if2false() {
+			int[][] tempos = {{0,10},{0,10},{10,10},{15,10}};
+			int result = Banco.banco(1, 4, tempos);
+			assertEquals(0, result);
+		}
 	
 
 	
 	
+	
 //if (caixas > 0)
-//todos os  caixas ocupados
+	//existem caixas livres	
+
 	@Test
 	public void if3true() {
 		int[][] tempos = {{10,1},{11,3},{15,1}};
 		int result = Banco.banco(2, 3, tempos);
 		assertEquals(0, result);
 	}
+		//todos os  caixas ocupados
 	
-	
-//existem caixas livres	
 	@Test
 	public void if3false() {
 		int[][] tempos = {{0,10},{0,10},{5,5}};
